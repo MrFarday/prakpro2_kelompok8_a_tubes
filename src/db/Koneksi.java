@@ -14,7 +14,7 @@ public class Koneksi {
             try{
                 String url = "jdbc:mysql://localhost:8889/RegMasyarakat";
                 String user = "root";
-                String pass = "";
+                String pass = "root";
                 DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
                 conn = (Connection) DriverManager.getConnection(url,user,pass);
             }catch (Exception e){
