@@ -10,6 +10,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
+import lupa_pass.LupaPassF;
 public class LoginF extends javax.swing.JFrame {
     int xx, xy;
     
@@ -276,12 +277,12 @@ public class LoginF extends javax.swing.JFrame {
 
     private void link_lupapassMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_link_lupapassMouseClicked
         // TODO add your handling code here:
-//        LupaPassF lp = new LupaPassF();
-//            lp.setVisible(true);
-//            lp.pack();
-//            lp.setLocationRelativeTo(null);
-//            lp.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
-//            this.dispose();
+        LupaPassF lp = new LupaPassF();
+            lp.setVisible(true);
+            lp.pack();
+            lp.setLocationRelativeTo(null);
+            lp.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+            this.dispose();
     }//GEN-LAST:event_link_lupapassMouseClicked
 
     private void link_registerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_link_registerMouseClicked
