@@ -12,9 +12,9 @@ public class Koneksi {
     public static Connection getConnection(){
         if (conn==null){
             try{
-                String url = "jdbc:mysql://localhost:8889/RegMasyarakat";
+                String url = "jdbc:mysql://localhost:3306/users";
                 String user = "root";
-                String pass = "root";
+                String pass = "";
                 DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
                 conn = (Connection) DriverManager.getConnection(url,user,pass);
             }catch (Exception e){
