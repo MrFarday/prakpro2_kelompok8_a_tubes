@@ -44,6 +44,9 @@
           <Color blue="aa" green="a4" red="6d" type="rgb"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="componentResized" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="jPanel1ComponentResized"/>
+      </Events>
 
       <Layout>
         <DimensionLayout dim="0">

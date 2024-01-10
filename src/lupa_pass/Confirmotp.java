@@ -99,6 +99,11 @@ public class Confirmotp extends javax.swing.JFrame {
         );
 
         jPanel1.setBackground(new java.awt.Color(109, 164, 170));
+        jPanel1.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentMoved(java.awt.event.ComponentEvent evt) {
+                jPanel1ComponentMoved(evt);
+            }
+        });
 
         btn_submitotp.setBackground(new java.awt.Color(38, 80, 115));
         btn_submitotp.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
@@ -223,6 +228,10 @@ public class Confirmotp extends javax.swing.JFrame {
         int y = evt.getYOnScreen();
         this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_formMouseDragged
+
+    private void jPanel1ComponentMoved(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jPanel1ComponentMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel1ComponentMoved
 
     /**
      * @param args the command line arguments
