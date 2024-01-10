@@ -110,6 +110,9 @@
           <Color blue="aa" green="a4" red="6d" type="rgb"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="componentHidden" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="jPanel2ComponentHidden"/>
+      </Events>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -242,6 +245,7 @@
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="link_lupapassMouseClicked"/>
+            <EventHandler event="componentHidden" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="link_lupapassComponentHidden"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">

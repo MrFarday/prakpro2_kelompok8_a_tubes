@@ -60,6 +60,11 @@ public class LupaPassF extends javax.swing.JFrame {
         });
 
         jPanel1.setBackground(new java.awt.Color(109, 164, 170));
+        jPanel1.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                jPanel1ComponentResized(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(100, 125, 135));
 
@@ -222,6 +227,10 @@ public class LupaPassF extends javax.swing.JFrame {
         int y = evt.getYOnScreen();
         this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_formMouseDragged
+
+    private void jPanel1ComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jPanel1ComponentResized
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel1ComponentResized
 
     /**
      * @param args the command line arguments

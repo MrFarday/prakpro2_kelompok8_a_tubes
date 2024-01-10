@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import lupa_pass.LupaPassF;
+import registrasi.Registrasi;
 public class LoginF extends javax.swing.JFrame {
     int xx, xy;
     
@@ -102,6 +103,11 @@ public class LoginF extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(109, 164, 170));
+        jPanel2.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentHidden(java.awt.event.ComponentEvent evt) {
+                jPanel2ComponentHidden(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 45)); // NOI18N
         jLabel1.setText("LOGIN");
@@ -129,6 +135,11 @@ public class LoginF extends javax.swing.JFrame {
         link_lupapass.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 link_lupapassMouseClicked(evt);
+            }
+        });
+        link_lupapass.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentHidden(java.awt.event.ComponentEvent evt) {
+                link_lupapassComponentHidden(evt);
             }
         });
 
@@ -287,13 +298,21 @@ public class LoginF extends javax.swing.JFrame {
 
     private void link_registerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_link_registerMouseClicked
         // TODO add your handling code here:
-//         register rg = new register();
-//            rg.setVisible(true);
-//            rg.pack();
-//            rg.setLocationRelativeTo(null);
-//            rg.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
-//            this.dispose();
+         Registrasi rg = new Registrasi();
+            rg.setVisible(true);
+            rg.pack();
+            rg.setLocationRelativeTo(null);
+            rg.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+            this.dispose();
     }//GEN-LAST:event_link_registerMouseClicked
+
+    private void link_lupapassComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_link_lupapassComponentHidden
+        // TODO add your handling code here:
+    }//GEN-LAST:event_link_lupapassComponentHidden
+
+    private void jPanel2ComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jPanel2ComponentHidden
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel2ComponentHidden
 
     /**
      * @param args the command line arguments
